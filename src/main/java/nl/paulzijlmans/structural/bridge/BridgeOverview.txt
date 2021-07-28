@@ -1,0 +1,29 @@
+Adapter
+
+Concepts
+- Decouple Abstraction and implementation
+- Encapsulation, Composition, Inheritance
+- Changes in Abstraction won’t affect client
+- Details won’t be right
+- Examples:
+  ▪ Driver
+  ▪ JDBC
+
+Design
+- Interfaces and Abstract classes
+- Composition over Inheritance
+- More than Composition
+- Expect change from both sides
+- Abstraction, Implementor, Refined Abstraction, Concrete Implementor
+
+Pitfalls
+- Increases complexity
+- Conceptually difficult to plan
+- More than just OO
+- What goes where
+
+Summary
+- Design for uncertainty
+- Can be complex
+- Provides flexibility
+- More than composition
