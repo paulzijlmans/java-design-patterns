@@ -4,6 +4,11 @@ Concepts
 - Only one instance created
 - Guarantees control of a resource
 - Lazily loaded
+- Examples:
+  ▪ Runtime
+  ▪ Logger
+  ▪ Spring Beans
+  ▪ Graphic Managers
 
 Design
 - Class is responsible for lifecycle
@@ -19,7 +24,7 @@ Pitfalls
 - If not careful, not thread-safe
 - Sometimes confused for Factory
 - java.util.Calendar is NOT a Singleton
-    - Prototype
+    ▪ Prototype
 
 Summary
 - Guarantee one instance
