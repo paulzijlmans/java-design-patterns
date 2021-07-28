@@ -1,0 +1,30 @@
+Prototype
+
+Concepts
+- Avoids costly creation
+- Avoids subclassing
+- Typically doesn’t use “new”
+- Often utilizes an Interface
+- Usually implemented with a Registry
+- Example:
+  ▪ java.lang.Object#clone()
+
+Design
+- Clone / Cloneable
+- Avoids keyword “new”
+- Although a copy, each instance unique
+- Costly construction not handled by client
+- Can still utilize parameters for construction
+- Shallow VS Deep Copy
+
+Pitfalls
+- Sometimes not clear when to use
+- Used with other patterns
+  ▪ Registry
+- Shallow VS Deep Copy
+
+Summary
+- Guarantee unique instance
+- Often refactored in
+- Can help with performance issues
+- Don’t always jump to a Factory
