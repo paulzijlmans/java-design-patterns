@@ -1,0 +1,29 @@
+Adapter
+
+Concepts
+- Plug adaptor
+- Convert interface into another interface
+- Legacy
+- Translates requests
+- Client, Adapter, Adaptee
+- Examples:
+  ▪ Arrays -> Lists
+  ▪ Streams
+
+Design
+- Client centric
+- Integrate new with old
+- Interface, but not required
+- Adaptee can be the implementation
+
+Pitfalls
+- Not a lot!
+- Don’t complicate
+- Multiple Adapters
+- Don’t add functionality
+
+Summary
+- Simple solution
+- Easy to implement
+- Integrate with Legacy
+- Can provide multiple adapters
