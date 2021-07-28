@@ -1,4 +1,4 @@
-package nl.paulzijlmans.builder;
+package nl.paulzijlmans.creational.builder;
 
 public class LunchOrderBean {
 

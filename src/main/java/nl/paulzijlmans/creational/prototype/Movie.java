@@ -1,4 +1,4 @@
-package nl.paulzijlmans.prototype;
+package nl.paulzijlmans.creational.prototype;
 
 public class Movie extends Item {
 

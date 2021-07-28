@@ -1,4 +1,4 @@
-package nl.paulzijlmans.prototype;
+package nl.paulzijlmans.creational.prototype;
 
 import java.util.ArrayList;
 import java.util.List;

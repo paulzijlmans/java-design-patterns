@@ -1,4 +1,4 @@
-package nl.paulzijlmans.singleton;
+package nl.paulzijlmans.creational.singleton;
 
 public class SingletonEverydayDemo {
 

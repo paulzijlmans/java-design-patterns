@@ -1,4 +1,4 @@
-package nl.paulzijlmans.singleton;
+package nl.paulzijlmans.creational.singleton;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
