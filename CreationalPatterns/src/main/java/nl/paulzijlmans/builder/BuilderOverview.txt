@@ -1,0 +1,30 @@
+Builder
+
+Concepts
+- Handles complex constructors
+- Large number of parameters
+- Immutability
+- Examples:
+  ▪ StringBuilder
+  ▪ DocumentBuilder
+  ▪ Locale.Builder
+
+Design
+- Flexibility over telescoping constructors
+- Static inner class
+- Calls appropriate constructor
+- Negates the need for exposed setters
+- Java 1.5+ can take advantage of Generics
+
+Pitfalls
+- Immutable
+- Inner static class
+- Designed first
+- Complexity
+- Method returns object
+
+Summary
+- Creative way to deal with complexity
+- Easy to implement
+- Few drawbacks
+- Can refactor in with separate class
