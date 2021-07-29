@@ -1,3 +1,4 @@
 package nl.paulzijlmans.creational.abstractfactory;
 
-public class VisaGoldCreditCard extends CreditCard {}
+public class VisaGoldCreditCard extends CreditCard {
+}

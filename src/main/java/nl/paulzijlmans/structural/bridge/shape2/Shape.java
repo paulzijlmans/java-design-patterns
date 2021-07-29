@@ -2,11 +2,11 @@ package nl.paulzijlmans.structural.bridge.shape2;
 
 public abstract class Shape {
 
-  protected Color color;
+    protected Color color;
 
-  public Shape(Color color) {
-    this.color = color;
-  }
+    public Shape(Color color) {
+        this.color = color;
+    }
 
-  public abstract void applyColor();
+    public abstract void applyColor();
 }

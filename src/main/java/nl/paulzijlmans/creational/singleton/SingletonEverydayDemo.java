@@ -13,7 +13,7 @@ public class SingletonEverydayDemo {
 
         System.out.println(anotherInstance);
 
-        if(singletonRuntime == anotherInstance) {
+        if (singletonRuntime == anotherInstance) {
             System.out.println("They are the same instance");
         }
     }

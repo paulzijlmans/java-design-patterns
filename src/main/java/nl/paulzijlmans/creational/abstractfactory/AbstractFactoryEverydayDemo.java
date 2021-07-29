@@ -8,20 +8,20 @@ import java.io.ByteArrayInputStream;
 
 public class AbstractFactoryEverydayDemo {
 
-  public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws Exception {
 
-    String xml = "<document><body><stock>AAPL</stock></body></document>";
-    ByteArrayInputStream bais = new ByteArrayInputStream(xml.getBytes());
+        String xml = "<document><body><stock>AAPL</stock></body></document>";
+        ByteArrayInputStream bais = new ByteArrayInputStream(xml.getBytes());
 
-    DocumentBuilderFactory abstractFactory = DocumentBuilderFactory.newInstance();
-    DocumentBuilder factory = abstractFactory.newDocumentBuilder();
-    Document doc = factory.parse(bais);
+        DocumentBuilderFactory abstractFactory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder factory = abstractFactory.newDocumentBuilder();
+        Document doc = factory.parse(bais);
 
-    doc.getDocumentElement().normalize();
+        doc.getDocumentElement().normalize();
 
-    System.out.println("Root element :" + doc.getDocumentElement().getNodeName());
+        System.out.println("Root element :" + doc.getDocumentElement().getNodeName());
 
-    System.out.println(abstractFactory.getClass());
-    System.out.println(factory.getClass());
-  }
+        System.out.println(abstractFactory.getClass());
+        System.out.println(factory.getClass());
+    }
 }

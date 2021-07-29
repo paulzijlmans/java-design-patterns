@@ -6,10 +6,10 @@ public class LunchOrderBeanDemo {
 
         LunchOrderBean lunchOrderBean = new LunchOrderBean();
 
-		lunchOrderBean.setBread("Wheat");
-		lunchOrderBean.setCondiments("Lettuce");
-		lunchOrderBean.setDressing("Mustard");
-		lunchOrderBean.setMeat("Ham");
+        lunchOrderBean.setBread("Wheat");
+        lunchOrderBean.setCondiments("Lettuce");
+        lunchOrderBean.setDressing("Mustard");
+        lunchOrderBean.setMeat("Ham");
 
         System.out.println(lunchOrderBean.getBread());
         System.out.println(lunchOrderBean.getCondiments());

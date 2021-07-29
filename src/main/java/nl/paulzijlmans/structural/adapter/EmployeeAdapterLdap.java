@@ -2,33 +2,33 @@ package nl.paulzijlmans.structural.adapter;
 
 public class EmployeeAdapterLdap implements Employee {
 
-  private EmployeeLdap instance;
+    private final EmployeeLdap instance;
 
-  public EmployeeAdapterLdap(EmployeeLdap instance) {
-    this.instance = instance;
-  }
+    public EmployeeAdapterLdap(EmployeeLdap instance) {
+        this.instance = instance;
+    }
 
-  @Override
-  public String getId() {
-    return instance.getCn();
-  }
+    @Override
+    public String getId() {
+        return instance.getCn();
+    }
 
-  @Override
-  public String getFirstName() {
-    return instance.getGivenName();
-  }
+    @Override
+    public String getFirstName() {
+        return instance.getGivenName();
+    }
 
-  @Override
-  public String getLastName() {
-    return instance.getSurname();
-  }
+    @Override
+    public String getLastName() {
+        return instance.getSurname();
+    }
 
-  @Override
-  public String getEmail() {
-    return instance.getMail();
-  }
+    @Override
+    public String getEmail() {
+        return instance.getMail();
+    }
 
-  public String toString() {
-    return "ID: " + instance.getCn();
-  }
+    public String toString() {
+        return "ID: " + instance.getCn();
+    }
 }

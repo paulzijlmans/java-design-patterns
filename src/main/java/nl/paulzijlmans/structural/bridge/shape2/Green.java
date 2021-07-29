@@ -3,6 +3,6 @@ package nl.paulzijlmans.structural.bridge.shape2;
 public class Green implements Color {
     @Override
     public void applyColor() {
-    System.out.println("Applying green color");
+        System.out.println("Applying green color");
     }
 }

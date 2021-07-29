@@ -2,11 +2,11 @@ package nl.paulzijlmans.structural.adapter;
 
 public interface Employee {
 
-  String getId();
+    String getId();
 
-  String getFirstName();
+    String getFirstName();
 
-  String getLastName();
+    String getLastName();
 
-  String getEmail();
+    String getEmail();
 }

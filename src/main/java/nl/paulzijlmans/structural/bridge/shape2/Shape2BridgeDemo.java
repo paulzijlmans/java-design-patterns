@@ -2,24 +2,24 @@ package nl.paulzijlmans.structural.bridge.shape2;
 
 public class Shape2BridgeDemo {
 
-  public static void main(String[] args) {
-    Color blue = new Blue();
+    public static void main(String[] args) {
+        Color blue = new Blue();
 
-    Shape square = new Square(blue);
+        Shape square = new Square(blue);
 
-    Color red = new Red();
+        Color red = new Red();
 
-    Shape circle = new Circle(red);
+        Shape circle = new Circle(red);
 
-    Color green = new Green();
+        Color green = new Green();
 
-    Shape greenCircle = new Circle(green);
+        Shape greenCircle = new Circle(green);
 
-    Shape greenSquare = new Square(green);
+        Shape greenSquare = new Square(green);
 
-    square.applyColor();
-    circle.applyColor();
-    greenCircle.applyColor();
-    greenSquare.applyColor();
-  }
+        square.applyColor();
+        circle.applyColor();
+        greenCircle.applyColor();
+        greenSquare.applyColor();
+    }
 }

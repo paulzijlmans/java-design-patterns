@@ -2,64 +2,64 @@ package nl.paulzijlmans.creational.builder;
 
 public class LunchOrder {
 
-  public static class Builder {
-    private String bread;
-    private String condiments;
-    private String dressing;
-    private String meat;
-
-    public Builder() {}
-
-    public LunchOrder build() {
-      return new LunchOrder(this);
+    private final String bread;
+    private final String condiments;
+    private final String dressing;
+    private final String meat;
+    private LunchOrder(Builder builder) {
+        this.bread = builder.bread;
+        this.condiments = builder.condiments;
+        this.dressing = builder.dressing;
+        this.meat = builder.meat;
     }
 
-    public Builder bread(String bread) {
-      this.bread = bread;
-      return this;
+    public String getBread() {
+        return bread;
     }
 
-    public Builder condiments(String condiments) {
-      this.condiments = condiments;
-      return this;
+    public String getCondiments() {
+        return condiments;
     }
 
-    public Builder dressing(String dressing) {
-      this.dressing = dressing;
-      return this;
+    public String getDressing() {
+        return dressing;
     }
 
-    public Builder meat(String meat) {
-      this.meat = meat;
-      return this;
+    public String getMeat() {
+        return meat;
     }
-  }
 
-  private final String bread;
-  private final String condiments;
-  private final String dressing;
-  private final String meat;
+    public static class Builder {
+        private String bread;
+        private String condiments;
+        private String dressing;
+        private String meat;
 
-  private LunchOrder(Builder builder) {
-    this.bread = builder.bread;
-    this.condiments = builder.condiments;
-    this.dressing = builder.dressing;
-    this.meat = builder.meat;
-  }
+        public Builder() {
+        }
 
-  public String getBread() {
-    return bread;
-  }
+        public LunchOrder build() {
+            return new LunchOrder(this);
+        }
 
-  public String getCondiments() {
-    return condiments;
-  }
+        public Builder bread(String bread) {
+            this.bread = bread;
+            return this;
+        }
 
-  public String getDressing() {
-    return dressing;
-  }
+        public Builder condiments(String condiments) {
+            this.condiments = condiments;
+            return this;
+        }
 
-  public String getMeat() {
-    return meat;
-  }
+        public Builder dressing(String dressing) {
+            this.dressing = dressing;
+            return this;
+        }
+
+        public Builder meat(String meat) {
+            this.meat = meat;
+            return this;
+        }
+    }
 }

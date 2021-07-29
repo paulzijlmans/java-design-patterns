@@ -5,35 +5,35 @@ import java.util.Map;
 
 public class Registry {
 
-  private final Map<String, Item> items = new HashMap<>();
+    private final Map<String, Item> items = new HashMap<>();
 
-  public Registry() {
-    loadItems();
-  }
-
-  public Item createItem(String type) {
-    Item item = null;
-
-    try {
-      item = (Item) (items.get(type)).clone();
-    } catch (CloneNotSupportedException e) {
-      e.printStackTrace();
+    public Registry() {
+        loadItems();
     }
 
-    return item;
-  }
+    public Item createItem(String type) {
+        Item item = null;
 
-  private void loadItems() {
-    Movie movie = new Movie();
-    movie.setTitle("Basic Movie");
-    movie.setPrice(24.99);
-    movie.setRuntime("2 hours");
-    items.put("Movie", movie);
+        try {
+            item = (Item) (items.get(type)).clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
 
-    Book book = new Book();
-    book.setNumberOfPages(335);
-    book.setPrice(19.99);
-    book.setTitle("Basic Book");
-    items.put("Book", book);
-  }
+        return item;
+    }
+
+    private void loadItems() {
+        Movie movie = new Movie();
+        movie.setTitle("Basic Movie");
+        movie.setPrice(24.99);
+        movie.setRuntime("2 hours");
+        items.put("Movie", movie);
+
+        Book book = new Book();
+        book.setNumberOfPages(335);
+        book.setPrice(19.99);
+        book.setTitle("Basic Book");
+        items.put("Book", book);
+    }
 }

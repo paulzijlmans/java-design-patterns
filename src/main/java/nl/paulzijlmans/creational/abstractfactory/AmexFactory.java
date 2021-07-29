@@ -2,31 +2,31 @@ package nl.paulzijlmans.creational.abstractfactory;
 
 public class AmexFactory extends CreditCardFactory {
 
-  @Override
-  public CreditCard getCreditCard(CardType cardType) {
+    @Override
+    public CreditCard getCreditCard(CardType cardType) {
 
-    switch (cardType) {
-      case GOLD:
-        return new AmexGoldCreditCard();
+        switch (cardType) {
+            case GOLD:
+                return new AmexGoldCreditCard();
 
-      case PLATINUM:
-        return new AmexPlatinumCreditCard();
+            case PLATINUM:
+                return new AmexPlatinumCreditCard();
+        }
+
+        return null;
     }
 
-    return null;
-  }
+    @Override
+    public Validator getValidator(CardType cardType) {
 
-  @Override
-  public Validator getValidator(CardType cardType) {
+        switch (cardType) {
+            case GOLD:
+                return new AmexGoldValidator();
 
-    switch (cardType) {
-      case GOLD:
-        return new AmexGoldValidator();
+            case PLATINUM:
+                return new AmexPlatinumValidator();
+        }
 
-      case PLATINUM:
-        return new AmexPlatinumValidator();
+        return null;
     }
-
-    return null;
-  }
 }

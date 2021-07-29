@@ -2,7 +2,8 @@ package nl.paulzijlmans.structural.bridge.shape1;
 
 public abstract class Shape {
 
-  public Shape() {}
+    public Shape() {
+    }
 
-  public abstract void applyColor();
+    public abstract void applyColor();
 }
