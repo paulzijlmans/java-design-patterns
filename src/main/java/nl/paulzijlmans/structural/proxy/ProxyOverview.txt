@@ -1,0 +1,27 @@
+Proxy
+
+Concepts
+- Interface by wrapping
+- Can add functionality
+- Security, Simplicity, Remote, Cost
+- Proxy called to access real object
+- Examples:
+  ▪ java.lang.reflect.Proxy
+  ▪ java.rmi.*
+
+Design
+- Interface based
+- Interface and Implementation Class
+- java.lang.reflect.InvocationHandler
+- java.lang.reflect.Proxy
+- Client, Interface, InvocationHandler, Proxy, Implementation
+
+Pitfalls
+- Only one proxy
+- Another Abstraction
+- Similar to other patterns
+
+Summary
+- Great utilities built into Java API
+- Only one instance
+- Used by DIJ/IOC Frameworks
